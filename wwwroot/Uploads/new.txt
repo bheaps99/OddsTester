@@ -1,0 +1,13 @@
+Username: StockOddsAdmin
+Password: SOA198af34!
+
+Resource Group: StockOdds
+
+Server Name: sodb1
+Server Admin Login: SOadmi
+Server Password: SO12DB123!aa
+
+database name: sodb
+
+"StockContext": "Server=sodb1.database.windows.net;Database=sodb;Persist Security Info=True;User ID=SOadmi;Password=SO12DB123!aa;"
+  

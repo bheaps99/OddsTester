@@ -1,0 +1,28 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <h1><u>Open To Close</u></h1>
+    <h3>1. Enter Date for which odds will be tested against</h3>
+    <h3>2. Click Choose File and choose your csv file for information to be added to</h3>
+    <h3>3. Click Start</h3>
+    <form method="post" enctype="multipart/form-data" asp-controller="Home" asp-action="Index">
+        <span>Date to Retrieve (month/day/year) (01/01/2001) </span><input type="text" name="CDate" /><br /><br />
+        <span>Select File:</span>
+        <input type="file" name="postedFiles" /><br /><br />
+        <input type="submit" value="Start" />
+
+        <br />
+        <span style="color:green">@Html.Raw(ViewBag.Message)</span><br />
+        <a href="~/Uploads/Compare.csv"><span style="color:red">@Html.Raw(ViewBag.a)</span></a>
+    </form>
+</body>
+</html>
