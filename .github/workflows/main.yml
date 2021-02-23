@@ -3,10 +3,10 @@ name: Deploy ASP.NET Core app to Azure Web App
 on:
   push:
     branches:
-      - main
+       [main]
   pull_request:
     branches:
-      - main
+       [main]
 # CONFIGURATION
 # For help, go to https://github.com/Azure/Actions
 #
